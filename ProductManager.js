@@ -72,7 +72,7 @@ console.log("Todos los productos:", allProducts);
 // Obtener un producto por su ID
 const productIdToGet = 1; // Suponiendo que el ID existe
 const product = manager.getProductById(productIdToGet);
-console.log(Producto con ID ${productIdToGet}:, product);
+console.log(`Producto con ID ${productIdToGet}:`, product);
 
 // Actualizar un producto por su ID
 const productIdToUpdate = 1; // Suponiendo que el ID existe
