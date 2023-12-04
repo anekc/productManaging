@@ -13,6 +13,7 @@ class ProductManager {
         product.id = this.generateID(products);
         products.push(product);
         this._saveProducts(products);
+        return products;
     }
 
     getProducts() {
@@ -32,12 +33,14 @@ class ProductManager {
             products[productIndex] = { ...products[productIndex], ...updatedFields };
             this._saveProducts(products);
         }
+        return products;
     }
 
     deleteProduct(productId) {
         const products = this.getProducts();
         const updatedProducts = products.filter(product => product.id !== productId);
         this._saveProducts(updatedProducts);
+        return updatedProducts;
     }
 
     generateID(products) {
@@ -51,10 +54,8 @@ class ProductManager {
 
 // Ejemplo de uso:
 
-// Crear una instancia de ProductManager con un archivo de datos llamado "productos.json"
 const manager = new ProductManager("productos.json");
 
-// Agregar un producto
 const newProduct = {
     title: "SKU1",
     description: "Descripción DE SKU1",
@@ -63,25 +64,22 @@ const newProduct = {
     code: "SKU201",
     stock: 25
 };
-manager.addProduct(newProduct);
+const updatedProducts = manager.addProduct(newProduct);
+console.log("Todos los productos después de agregar uno:", updatedProducts);
 
-// Obtener todos los productos
 const allProducts = manager.getProducts();
 console.log("Todos los productos:", allProducts);
 
-// Obtener un producto por su ID
-const productIdToGet = 1; // Suponiendo que el ID existe
+const productIdToGet = 1;
 const product = manager.getProductById(productIdToGet);
-console.log(Producto con ID ${productIdToGet}:, product);
+console.log(`Producto con ID ${productIdToGet}:`, product);
 
-// Actualizar un producto por su ID
-const productIdToUpdate = 1; // Suponiendo que el ID existe
+const productIdToUpdate = 1;
 const updatedFields = {
     title: "Producto Modificado",
     price: 129.99
 };
 manager.updateProduct(productIdToUpdate, updatedFields);
 
-// Eliminar un producto por su ID
-const productIdToDelete = 1; // Suponiendo que el ID existe
+const productIdToDelete = 1;
 manager.deleteProduct(productIdToDelete);
