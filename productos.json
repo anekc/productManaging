@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Producto A",
+        "description": "Descripción del Producto A",
+        "price": 29.99,
+        "thumbnail": "imagenA.jpg",
+        "code": "PA001",
+        "stock": 15
+    },
+    {
+        "id": 2,
+        "title": "Producto B",
+        "description": "Descripción del Producto B",
+        "price": 39.99,
+        "thumbnail": "imagenB.jpg",
+        "code": "PB002",
+        "stock": 20
+    },
+    {
+        "id": 3,
+        "title": "Producto C",
+        "description": "Descripción del Producto C",
+        "price": 49.99,
+        "thumbnail": "imagenC.jpg",
+        "code": "PC003",
+        "stock": 25
+    },
+    {
+        "id": 4,
+        "title": "Producto D",
+        "description": "Descripción del Producto D",
+        "price": 19.99,
+        "thumbnail": "imagenD.jpg",
+        "code": "PD004",
+        "stock": 10
+    },
+    {
+        "id": 5,
+        "title": "Producto E",
+        "description": "Descripción del Producto E",
+        "price": 59.99,
+        "thumbnail": "imagenE.jpg",
+        "code": "PE005",
+        "stock": 30
+    },
+    {
+        "id": 6,
+        "title": "Producto F",
+        "description": "Descripción del Producto F",
+        "price": 69.99,
+        "thumbnail": "imagenF.jpg",
+        "code": "PF006",
+        "stock": 18
+    },
+    {
+        "id": 7,
+        "title": "Producto G",
+        "description": "Descripción del Producto G",
+        "price": 79.99,
+        "thumbnail": "imagenG.jpg",
+        "code": "PG007",
+        "stock": 22
+    },
+    {
+        "id": 8,
+        "title": "Producto H",
+        "description": "Descripción del Producto H",
+        "price": 89.99,
+        "thumbnail": "imagenH.jpg",
+        "code": "PH008",
+        "stock": 12
+    },
+    {
+        "id": 9,
+        "title": "Producto I",
+        "description": "Descripción del Producto I",
+        "price": 99.99,
+        "thumbnail": "imagenI.jpg",
+        "code": "PI009",
+        "stock": 28
+    },
+    {
+        "id": 10,
+        "title": "Producto J",
+        "description": "Descripción del Producto J",
+        "price": 109.99,
+        "thumbnail": "imagenJ.jpg",
+        "code": "PJ010",
+        "stock": 14
+    }
+]
